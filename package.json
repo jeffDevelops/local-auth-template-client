@@ -1,0 +1,76 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.0.0-rc.4",
+    "@apollo/react-hooks": "^3.1.5",
+    "@reach/router": "^1.3.3",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-error": "^1.1.13",
+    "apollo-link-http": "^1.5.17",
+    "graphql": "^15.1.0",
+    "graphql-tag": "^2.10.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1",
+    "yup": "^0.29.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:dev": "react-scripts start",
+    "test": "react-scripts test --env=jsdom-fourteen",
+    "eject": "react-scripts eject",
+    "vercel-build": "react-scripts build",
+    "vercel-dev": "react-scripts start"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "<rootDir>/src/_testUtils/mocks/fileMock.ts",
+      "\\.svg": "<rootDir>/src/test-utils/mocks/svg.tsx"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "^3.1.4",
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/reach__router": "^1.3.5",
+    "@types/react-plaid-link": "^1.3.1",
+    "@types/styled-components": "^5.1.0",
+    "@types/yup": "^0.29.3",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}
